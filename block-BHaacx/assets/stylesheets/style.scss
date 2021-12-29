@@ -1,0 +1,195 @@
+@import "var";
+@import "general";
+@import "reset";
+@import "flex";
+
+header {
+     position: absoulte;
+     top: 2rem;
+    .brand {
+        color: $text-sec;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .nav-bar {
+        a {
+            margin-left: 1rem;
+            font-size: 0.8rem;
+            color: $text;
+        }
+    }
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one one two two" 
+                         "three three four four"
+                         "five six seven eight"
+                         "nine nine ten ten"
+                         "eleven eleven twelve twelve"
+                         "thirteen thirteen fourteen fiveteen"
+                         "sixteen sixteen sixteen sixteen";
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+    background-color: $tertiary;
+    .inside-two {
+        margin: auto 3rem;
+    }
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+    background-color: $secondary; 
+    .four-figure {
+        background-image: url(../media/about-img.jpg);
+        background-position: top;
+        background-size: auto;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .four-p {
+        margin: 1.5rem 0;
+    }
+    .skill-bar-container {
+        margin: 3rem 0;
+        .skill {
+            margin: 1.5rem 0;
+        }
+    }
+}
+.five {
+    grid-area: five;
+    background-color: $secondary;
+}
+.six {
+    grid-area: six;
+    background-color: $primary;
+}
+.seven {
+    grid-area: seven;
+    background-color: black;
+}
+.eight {
+    grid-area: eight;
+    color: $text-sec;
+}
+.nine {
+    grid-area: nine;
+    // background-image: url(../media/experience-img.jpg);
+    // background-position: center;
+    // background-size: cover;
+}
+.ten {
+    grid-area: ten;
+    color: white;
+    background-color: $primary;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+.eleven {
+    grid-area: eleven;
+    color: white;
+    background-color: $secondary;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+} 
+.twelve {
+    grid-area: twelve;
+}
+.thirteen {
+    grid-area: thirteen;
+    background-color: $primary;
+    padding: 16rem 0;
+}
+.fourteen {
+    grid-area: fourteen;
+    background-image: url(../media/contact-img.jpg);
+    background-position: top;
+    background-size: auto;
+}
+.fiveteen {
+    grid-area: fiveteen;
+}
+.sixteen {
+    grid-area: sixteen;
+    padding: 6rem;
+    background-color: $primary;
+}
+
+
+
+
+
+
+
+.skill-bar-out {
+    background-color: white;
+    height: 0.2rem;
+    .skill-bar-in {
+        background-color: black;
+        height: 0.2rem;
+    }
+    .ninety {
+        width: 90%;
+    }
+    .eighty {
+        width: 80%;
+    }
+    .seventy {
+        width: 70%;
+    }
+}
+.five, .six, .seven, .eight {
+    padding-bottom: 2.5rem;
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    i {
+        margin: 3rem auto;
+        font-size: 2.5rem;
+    }
+}
+
+// Footer 
+
+footer {
+    padding: 10rem 0;
+    p {
+        font-size: 1.5rem;
+        color: $text;
+        margin-bottom: 6rem;
+        span {
+            color: $secondary;
+        }
+    }
+    a {
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        color: $text-sec;
+    }
+}
