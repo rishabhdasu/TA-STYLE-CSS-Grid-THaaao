@@ -1,0 +1,133 @@
+@import "reset";
+@import "general";
+@import "flex";
+
+header h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.nav-bar-container {
+    background-color: white;
+    width: 100%;
+    padding: 0.8rem;
+    border-top: 3px solid #23A0C2;
+    margin: 2rem 0;
+    .nav-bar {
+        margin: 0 2rem;
+        a {
+            color: #23A0C2;
+            font-weight: 600;
+        }
+    }
+}
+.item-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "sidebar-l-one  main-item sidebar-r-one"
+                          "sidebar-l-two main-item sidebar-r-two"
+                          "sidebar-l-two main-item sidebar-r-three";
+}
+.sidebar-l-one {
+    grid-area: sidebar-l-one;
+}
+.sidebar-l-two {
+    grid-area: sidebar-l-two;
+}
+.main-item {
+    grid-area: main-item;
+}
+.sidebar-r-one {
+    grid-area: sidebar-r-one;
+    a {
+        background-color: red;
+        color: white !important;
+    }
+}
+.sidebar-r-two {
+    grid-area: sidebar-r-two;
+    h2 {
+        background-color: #0095BE;
+        color: white;
+    }
+}
+.sidebar-r-three {
+    grid-area: sidebar-r-three;
+}
+.item {
+    background-color: white;
+    a {
+        display: block;
+        color: red;
+        padding: 0.2rem 0.5rem;
+    }
+}
+h2 {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.6rem;
+    color: rgb(95, 93, 93);
+    font-weight: 600;
+}
+p {
+    margin: 1rem 0;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+.side-bar-fig {
+    width: 8rem;
+}
+.main-fig {
+    width: 15rem;
+    img {
+        border-radius: 50%;
+    }
+}
+figure {
+    margin: 1rem auto;
+}
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .item-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sidebar-l-one sidebar-r-one"
+                             "sidebar-l-two sidebar-r-two"
+                             "sidebar-l-two sidebar-r-three"
+                             "main-item ."
+                             "main-item ."
+                             "main-item ."
+                             ;
+                             
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 520px;
+    }
+    .item-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidebar-l-one"
+                             "sidebar-l-two"
+                             "sidebar-l-two"
+                             "main-item"
+                             "main-item"
+                             "main-item"
+                             "sidebar-r-one"
+                             "sidebar-r-two"
+                             "sidebar-r-three"
+                             ;
+                             
+    }
+    
+}
