@@ -1,0 +1,385 @@
+@import "var";
+@import "general";
+@import "reset";
+@import "flex";
+
+header {
+     position: absoulte;
+     top: 2rem;
+    .brand {
+        color: $text-sec;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .nav-bar {
+        a {
+            margin-left: 2rem;
+            font-size: 1rem;
+            color: $text;
+        }
+    }
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one one two two" 
+                         "three three four four"
+                         "five six seven eight"
+                         "nine nine ten ten"
+                         "eleven eleven twelve twelve"
+                         "thirteen thirteen fourteen fiveteen"
+                         "sixteen sixteen sixteen sixteen";
+}
+.one {
+    grid-area: one;
+    background-image: url(../media/home-img.jpg);
+    background-position: top;
+    background-size: auto;
+}
+.two {
+    grid-area: two;
+    background-color: $tertiary;
+    padding: 12rem 0;
+    h2 {
+        color: $text;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 3rem;
+        color: $text-sec;
+        strong {
+            color: black;
+        }
+    }
+    p {
+        color: $text;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+    }
+    button {
+        margin-top: 2rem;
+        padding: 1rem 2.5rem;
+        border: 2px solid black;
+        background-color: transparent;
+        border-radius: 1.5rem;
+        a {
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+
+// Three
+
+.three {
+    grid-area: three;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+        color: $text-sec;
+    }
+    h3 {
+        margin-top: 1rem;
+        color: $secondary;
+    }
+    p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: $text;
+    }
+}
+
+// Four
+
+.four {
+    grid-area: four;
+    background-color: $secondary; 
+    .four-figure {
+        background-image: url(../media/about-img.jpg);
+        background-position: top;
+        background-size: auto;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .four-p {
+        margin: 1.5rem 0;
+    }
+    .skill-bar-container {
+        margin: 3rem 0;
+        .skill {
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+// Five 
+
+.five {
+    grid-area: five;
+    background-color: $secondary;
+}
+
+// Six
+
+.six {
+    grid-area: six;
+    background-color: $primary;
+}
+
+// Seven
+
+.seven {
+    grid-area: seven;
+    background-color: black;
+}
+
+// Eight 
+
+.eight {
+    grid-area: eight;
+    color: $text-sec;
+}
+
+// Nine
+.nine {
+    grid-area: nine;
+    background-image: url(../media/experience-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+// Ten
+.ten {
+    grid-area: ten;
+    color: white;
+    background-color: $primary;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+// Ten and Eleven Common 
+
+.experiences, .education {
+    margin: 5rem 0;
+    i {
+        font-size: 3rem;
+        margin-right: 4rem;
+    }
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        span {
+            font-size: 1.2rem;
+            color: black;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 100;
+        color: whitesmoke;
+    }
+}
+
+// Eleven
+
+.eleven {
+    grid-area: eleven;
+    color: white;
+    background-color: $secondary;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+} 
+
+// Tweleve
+
+.twelve {
+    grid-area: twelve;
+    background-image: url(../media/education-img.jpg);
+    background-position: top;
+    background-size: auto;
+}
+
+// Thirteen
+
+.thirteen {
+    grid-area: thirteen;
+    background-color: $primary;
+    color: white;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .form {
+        margin: 5rem 0;
+        input, textarea {
+            border: none;
+            outline: none;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            font-size: 1rem;
+            background-color: transparent;
+            border-bottom: 1px solid rgb(216, 210, 210);
+            &::placeholder {
+                color: white;
+            }
+        }
+        .form-btn {
+            border: none;
+            background-color: white;
+            color: $text;
+            padding: 1rem 2rem;
+            border-radius: 1.5rem;
+            width: 50%;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Fourteen
+
+.fourteen {
+    grid-area: fourteen;
+    background-image: url(../media/contact-img.jpg);
+    background-position: top;
+    background-size: auto;
+}
+
+// Fiveteen
+
+.fiveteen {
+    grid-area: fiveteen;
+    background-color: black;
+    h2 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    address {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 6rem;
+        font-size: 2rem;
+    }
+    ul {
+        margin-top: 4rem;
+        li {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            i {
+                margin-right: 1.5rem;
+            }
+            a {
+                color: $secondary;
+            }
+        }
+    }
+}
+.sixteen {
+    grid-area: sixteen;
+    padding: 6rem;
+    background-color: $primary;
+}
+
+
+
+.skill-bar-out {
+    background-color: white;
+    height: 0.2rem;
+    .skill-bar-in {
+        background-color: black;
+        height: 0.2rem;
+    }
+    .ninety {
+        width: 90%;
+    }
+    .eighty {
+        width: 80%;
+    }
+    .seventy {
+        width: 70%;
+    }
+}
+.five, .six, .seven, .eight {
+    padding-bottom: 2.5rem;
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    i {
+        margin: 3rem auto;
+        font-size: 2.5rem;
+    }
+}
+
+// Footer 
+
+footer {
+    padding: 10rem 0;
+    p {
+        font-size: 1.5rem;
+        color: $text;
+        margin-bottom: 6rem;
+        span {
+            color: $secondary;
+        }
+    }
+    a {
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        color: $text-sec;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "one"
+                             "two"
+                             "three"
+                             "four"
+                             "five"
+                             "six"
+                             "seven"
+                             "eight"
+                             "nine"
+                             "ten"
+                             "eleven"
+                             "twelve"
+                             "thirteen"
+                             "fourteen"
+                             "fiveteen"
+                             "sixteen";
+    }
+}
