@@ -18,7 +18,7 @@ input, select {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1800px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -154,6 +154,12 @@ table {
           justify-content: center;
 }
 
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -190,14 +196,14 @@ header {
 }
 
 header .brand {
-  color: #5A534F;
-  font-size: 1rem;
+  color: #3d3b3a;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 header .nav-bar a {
-  margin-left: 1rem;
-  font-size: 0.8rem;
+  margin-left: 2rem;
+  font-size: 1rem;
   color: #605d5a;
 }
 
@@ -214,6 +220,9 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: one;
+  background-image: url(../media/home-img.jpg);
+  background-position: top;
+  background-size: auto;
 }
 
 .two {
@@ -222,10 +231,42 @@ main {
   -ms-grid-column-span: 2;
   grid-area: two;
   background-color: #F5E3D7;
+  padding: 12rem 0;
 }
 
-.two .inside-two {
-  margin: auto 3rem;
+.two h2 {
+  color: #605d5a;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.two h1 {
+  font-size: 3rem;
+  color: #3d3b3a;
+}
+
+.two h1 strong {
+  color: black;
+}
+
+.two p {
+  color: #605d5a;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.two button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 1.5rem;
+}
+
+.two button a {
+  color: black;
+  font-weight: 600;
 }
 
 .three {
@@ -233,6 +274,23 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: three;
+}
+
+.three h2 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  color: #3d3b3a;
+}
+
+.three h3 {
+  margin-top: 1rem;
+  color: #ECAF4E;
+}
+
+.three p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #605d5a;
 }
 
 .four {
@@ -291,7 +349,7 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: eight;
-  color: #5A534F;
+  color: #3d3b3a;
 }
 
 .nine {
@@ -299,6 +357,9 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nine;
+  background-image: url(../media/experience-img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .ten {
@@ -317,7 +378,32 @@ main {
 
 .ten h3 {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.experiences, .education {
+  margin: 5rem 0;
+}
+
+.experiences i, .education i {
+  font-size: 3rem;
+  margin-right: 4rem;
+}
+
+.experiences h4, .education h4 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.experiences h4 span, .education h4 span {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.experiences p, .education p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: whitesmoke;
 }
 
 .eleven {
@@ -336,7 +422,7 @@ main {
 
 .eleven h3 {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .twelve {
@@ -344,6 +430,9 @@ main {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: twelve;
+  background-image: url(../media/education-img.jpg);
+  background-position: top;
+  background-size: auto;
 }
 
 .thirteen {
@@ -352,7 +441,58 @@ main {
   -ms-grid-column-span: 2;
   grid-area: thirteen;
   background-color: #FC683E;
-  padding: 16rem 0;
+  color: white;
+}
+
+.thirteen h2 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.thirteen h3 {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.thirteen .form {
+  margin: 5rem 0;
+}
+
+.thirteen .form input, .thirteen .form textarea {
+  border: none;
+  outline: none;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid #d8d2d2;
+}
+
+.thirteen .form input::-webkit-input-placeholder, .thirteen .form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.thirteen .form input:-ms-input-placeholder, .thirteen .form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.thirteen .form input::-ms-input-placeholder, .thirteen .form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.thirteen .form input::placeholder, .thirteen .form textarea::placeholder {
+  color: white;
+}
+
+.thirteen .form .form-btn {
+  border: none;
+  background-color: white;
+  color: #605d5a;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  width: 50%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .fourteen {
@@ -368,6 +508,39 @@ main {
   -ms-grid-row: 6;
   -ms-grid-column: 4;
   grid-area: fiveteen;
+  background-color: black;
+}
+
+.fiveteen h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.fiveteen address {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.fiveteen h4 {
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+.fiveteen ul {
+  margin-top: 4rem;
+}
+
+.fiveteen ul li {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.fiveteen ul li i {
+  margin-right: 1.5rem;
+}
+
+.fiveteen ul li a {
+  color: #ECAF4E;
 }
 
 .sixteen {
@@ -437,6 +610,20 @@ footer p span {
 footer a {
   margin-right: 3rem;
   font-size: 1.2rem;
-  color: #5A534F;
+  color: #3d3b3a;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 1000px;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve" "thirteen" "fourteen" "fiveteen" "sixteen";
+  }
 }
 /*# sourceMappingURL=style.css.map */
